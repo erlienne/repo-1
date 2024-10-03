@@ -1,0 +1,87 @@
+/* Estilização principal da 'frame', que é o container do conteúdo */
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px; /* Move o elemento para cima pela metade de sua altura */
+    margin-left: -200px; /* Move o elemento para a esquerda pela metade de sua largura */
+    border-radius: 20px; /* Cantos arredondados */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5); /* Sombra mais pronunciada */
+    background: linear-gradient(135deg, #FF758C 0%, #FF7EB3 100%); /* Gradiente atraente */
+    font-family: 'Arial', sans-serif; /* Fonte mais moderna */
+    color: #fff;
+    text-align: center; /* Centraliza o texto dentro da frame */
+}
+
+/* Centralização do conteúdo */
+.center {
+    position: relative; /* Mudança para relative para melhor controle dos filhos */
+    top: 50%;
+    transform: translateY(-50%); /* Centraliza verticalmente */
+}
+
+/* Estilização dos números */
+.number {
+    position: relative;
+    height: 120px; /* Aumentar a altura para dar mais destaque */
+    width: 240px; /* Largura constante para alinhar os números */
+    margin: 0 auto; /* Centraliza o container */
+}
+
+/* Parte do número 1 */
+.one {
+    position: absolute;
+    top: 20px; /* Ajuste na posição */
+    left: 110px; /* Alinhamento central */
+    height: 80px; /* Aumenta a altura do número 1 */
+    width: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Sombra suave */
+}
+
+/* Partes do número 0 */
+.zero-one, 
+.zero-two {
+    position: absolute;
+    top: 0;
+    height: 80px; /* Altura dos zeros */
+    width: 80px; /* Largura dos zeros */
+    border-radius: 50%; /* Forma circular */
+    border: 15px solid #fff; /* Borda branca */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Sombra suave */
+}
+
+/* Posicionamento dos zeros */
+.zero-one {
+    left: 25px; /* Primeiro zero */
+}
+
+.zero-two {
+    left: 135px; /* Segundo zero */
+}
+
+/* Texto grande */
+.big {
+    position: relative;
+    display: block;
+    font-size: 100px; /* Aumentar a fonte */
+    line-height: 80px; /* Aumentar o espaçamento */
+    text-transform: uppercase;
+    font-weight: bold; /* Usar 'bold' para mais destaque */
+    margin-top: 20px; /* Margem superior para melhor alinhamento */
+}
+
+/* Texto pequeno */
+.small {
+    position: relative;
+    display: block; 
+    font-size: 25px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px; /* Aumentar o espaçamento entre letras */
+    margin-top: 5px; /* Adiciona um espaço entre os textos */
+}
